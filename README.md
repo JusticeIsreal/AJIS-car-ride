@@ -28,16 +28,21 @@ To run the AJIS CAR RIDE web app locally, follow these steps:
 
 This project has taken the following number of commits to complete:
 
-<!-- Insert dynamic commit history here -->
-<script>
-fetch('https://api.github.com/repos/your-username/ajis-car-ride/commits')
-  .then(response => response.json())
-  .then(commits => {
-    const commitCount = commits.length;
-    document.querySelector('#commit-history').innerText = commitCount;
-  })
-  .catch(error => console.error(error));
-</script>
+
+
+<!-- GitHub Readme Stats -->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=JusticeIsreal&show_icons=true&count_private=true&hide=stars,contribs" alt="GitHub stats">
+</p>
+<!-- GitHub Readme Stats -->
+
+## Top Languages
+
+<!-- Top Languages -->
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JusticeIsreal&layout=compact" alt="Top Languages">
+</p>
+<!-- Top Languages -->
 
 ## Contact
 
