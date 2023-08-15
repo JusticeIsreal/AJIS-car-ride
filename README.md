@@ -18,8 +18,8 @@ AJIS CAR RIDE is a web application built using Next.js and Tailwind CSS that all
 
 To run the AJIS CAR RIDE web app locally, follow these steps:
 
-1. Clone this repository: `git clone https://github.com/your-username/ajis-car-ride.git`
-2. Navigate to the project directory: `cd ajis-car-ride`
+1. Clone this repository: `git clone https://github.com/JusticeIsreal/AJIS-car-ride.git`
+2. Navigate to the project directory: `cd AJIS-car-ride`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm run dev`
 5. Access the app in your browser: `http://localhost:3000`
@@ -28,19 +28,17 @@ To run the AJIS CAR RIDE web app locally, follow these steps:
 
 This project has taken the following number of commits to complete:
 
-
-
-<!-- GitHub Readme Stats -->
+<!-- GitHub API to fetch commit count -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=JusticeIsreal&show_icons=true&count_private=true&hide=stars,contribs" alt="GitHub stats">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=JusticeIsreal&repo=AJIS-car-ride&title_color=000000&icon_color=000000&text_color=000000&bg_color=ffffff&show_icons=true&count_private=true&hide=stars,contribs" alt="GitHub stats">
 </p>
-<!-- GitHub Readme Stats -->
+<!-- End GitHub API -->
 
 ## Top Languages
 
 <!-- Top Languages -->
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JusticeIsreal&layout=compact" alt="Top Languages">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JusticeIsreal&repo=AJIS-car-ride&layout=compact" alt="Top Languages">
 </p>
 <!-- Top Languages -->
 
