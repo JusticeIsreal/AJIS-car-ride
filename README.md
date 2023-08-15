@@ -24,18 +24,6 @@ To run the AJIS CAR RIDE web app locally, follow these steps:
 4. Start the development server: `npm run dev`
 5. Access the app in your browser: `http://localhost:3000`
 
-## Commit History
-
-This project has taken the following number of commits to complete: [INSERT_COMMIT_COUNT_HERE]
-
-## Top Languages
-
-<!-- Top Languages -->
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JusticeIsreal&repo=AJIS-car-ride&layout=compact" alt="Top Languages">
-</p>
-<!-- Top Languages -->
-
 ## Contact
 
 If you have any questions or feedback about AJIS CAR RIDE, feel free to contact me:
