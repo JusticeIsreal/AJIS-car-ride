@@ -1,6 +1,10 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 function AutocompleteAddress() {
+  const [source, setSource] = useState<any>("");
+  const [destination, setDestination] = useState<any>("");
+
   return (
     <div className="mt-5 ">
       <div>
@@ -8,6 +12,9 @@ function AutocompleteAddress() {
         <input
           type="text"
           className="bg-white p-1 border-[1px] w-full rounded-md outline-none focus:border-[#5bbdce]"
+          value={source}
+          onChange={(e) => setSource(e.target.value)}
+          placeholder="Enter Full address"
         />
       </div>
       <div className="mt-3">
@@ -15,6 +22,9 @@ function AutocompleteAddress() {
         <input
           type="text"
           className="bg-white p-1 border-[1px] w-full rounded-md outline-none focus:border-[#5bbdce]"
+          placeholder="Enter Full address"
+          value={destination}
+          onChange={(e) => setDestination(e.target.value)}
         />
       </div>
     </div>
