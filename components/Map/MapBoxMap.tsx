@@ -1,23 +1,41 @@
 "use client";
-import React from "react";
-import { Map } from "react-map-gl";
+import { UserLocationContext } from "@/context/UserLocationContext";
+import React, { useContext } from "react";
+import { Map, Marker } from "react-map-gl";
+import "mapbox-gl/dist/mapbox-gl.css";
 
 function MapBoxMap() {
   const screenHeight = window.innerHeight * 0.72;
+  const { currentLocation, setCurrentLocation } =
+    useContext(UserLocationContext);
   return (
     <div className="p-5">
       <h2 className="text=[20px] font-semibold">Map</h2>
       <div style={{ height: screenHeight }}>
-        <Map
-          mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
-          initialViewState={{
-            longitude: -122.4,
-            latitude: 37.8,
-            zoom: 14,
-          }}
-          style={{ width: "100%" }}
-          mapStyle="mapbox://styles/mapbox/streets-v9"
-        />
+        {currentLocation ? (
+          <Map
+            mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_ACCESS_TOKEN}
+            initialViewState={{
+              longitude: currentLocation?.lng,
+              latitude: currentLocation?.lat,
+              zoom: 14,
+            }}
+            style={{ width: "100%" }}
+            mapStyle="mapbox://styles/mapbox/streets-v9"
+          >
+            <Marker
+              longitude={currentLocation?.lng}
+              latitude={currentLocation?.lat}
+              anchor="bottom"
+            >
+              <img src="./pin.png" className="h-[50px]"/>
+            </Marker>
+          </Map>
+        ) : (
+          <h2 className="text-center text-red-500 font-extrabold">
+            TURN ON LOCATION ACCESS
+          </h2>
+        )}
       </div>
     </div>
   );
