@@ -30,23 +30,23 @@ export default function Home() {
   )}&key=${apiKey}`;
 
   // Fetch the geolocation data
-  useEffect(() => {
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        if (data.results.length > 0) {
-          const location = data.results[0].geometry.location;
-          const latitude = location.lat;
-          const longitude = location.lng;
-          setNewLocation({ lat: latitude, lng: longitude });
-        } else {
-          console.log("Address not found");
-        }
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-  }, [destination]);
+  // useEffect(() => {
+  //   fetch(url)
+  //     .then((response) => response.json())
+  //     .then((data) => {
+  //       if (data.results.length > 0) {
+  //         const location = data.results[0].geometry.location;
+  //         const latitude = location.lat;
+  //         const longitude = location.lng;
+  //         setNewLocation({ lat: latitude, lng: longitude });
+  //       } else {
+  //         console.log("Address not found");
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       console.error("Error:", error);
+  //     });
+  // }, [destination]);
 
   return (
     <div>
