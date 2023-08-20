@@ -5,7 +5,7 @@ import Cars from "./Cars";
 import Cards from "./Cards";
 
 function Booking() {
-  //   const screenHeight = window.innerHeight * 0.72;
+  const [destination, setDestination] = useState<any>("");
   return (
     <div className="p-5 ">
       <h2 className="text-[20px] font-semibold">Booking</h2>

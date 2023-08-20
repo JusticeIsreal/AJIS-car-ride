@@ -6,8 +6,9 @@ import "mapbox-gl/dist/mapbox-gl.css";
 
 function MapBoxMap() {
   const screenHeight = window.innerHeight * 0.72;
-  const { currentLocation, setCurrentLocation } =
+  const { currentLocation, setCurrentLocation, newLocation, setNewLocation } =
     useContext(UserLocationContext);
+
   return (
     <div className="p-5">
       <h2 className="text=[20px] font-semibold">Map</h2>
@@ -23,13 +24,25 @@ function MapBoxMap() {
             style={{ width: "100%" }}
             mapStyle="mapbox://styles/mapbox/streets-v9"
           >
+            {/* present location marker */}
+
             <Marker
               longitude={currentLocation?.lng}
               latitude={currentLocation?.lat}
               anchor="bottom"
             >
-              <img src="./pin.png" className="h-[50px]"/>
+              <img src="./pin.png" className="h-[50px]" />
             </Marker>
+            {/* destination location marker  */}
+            {newLocation && (
+              <Marker
+                longitude={newLocation?.lng}
+                latitude={newLocation?.lat}
+                anchor="bottom"
+              >
+                <img src="./pin.png" className="h-[50px]" />
+              </Marker>
+            )}
           </Map>
         ) : (
           <h2 className="text-center text-red-500 font-extrabold">

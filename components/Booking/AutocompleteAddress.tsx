@@ -1,13 +1,14 @@
 "use client";
-import React, { useState } from "react";
+import { UserLocationContext } from "@/context/UserLocationContext";
+import React, { useContext, useState } from "react";
 
 function AutocompleteAddress() {
   const [source, setSource] = useState<any>("");
-  const [destination, setDestination] = useState<any>("");
+  const { destination, setDestination } = useContext(UserLocationContext);
 
   return (
     <div className="mt-5 ">
-      <div>
+      {/* <div>
         <label className="text-gray-400">Where From?</label>
         <input
           type="text"
@@ -16,7 +17,7 @@ function AutocompleteAddress() {
           onChange={(e) => setSource(e.target.value)}
           placeholder="Enter Full address"
         />
-      </div>
+      </div> */}
       <div className="mt-3">
         <label className="text-gray-400">Where To?</label>
         <input
