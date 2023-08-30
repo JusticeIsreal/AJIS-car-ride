@@ -1,6 +1,6 @@
 # AJIS CAR RIDE
 
-![Front Page](https://res.cloudinary.com/isreal/image/upload/v1690556060/Screenshot_2023-07-28_at_15.53.00_qpx1ot.png)
+
 
 ## Overview
 
